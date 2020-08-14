@@ -1,0 +1,19 @@
+<!-- View Container -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Introdução de mais uma linha csrf-->
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
